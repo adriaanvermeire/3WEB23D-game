@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,17 +888,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 114736978486261938, guid: a322d629891676d468e1e24f25eca48d,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1588336690}
-    - target: {fileID: 223506290620161224, guid: a322d629891676d468e1e24f25eca48d,
+    - target: {fileID: 223955459000731518, guid: a322d629891676d468e1e24f25eca48d,
         type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1072671683}
-    - target: {fileID: 223955459000731518, guid: a322d629891676d468e1e24f25eca48d,
+    - target: {fileID: 223506290620161224, guid: a322d629891676d468e1e24f25eca48d,
         type: 2}
       propertyPath: m_Camera
       value: 
@@ -913,6 +908,11 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1072671683}
+    - target: {fileID: 114736978486261938, guid: a322d629891676d468e1e24f25eca48d,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1588336690}
     - target: {fileID: 114736978486261938, guid: a322d629891676d468e1e24f25eca48d,
         type: 2}
       propertyPath: forwardsWaypoint
