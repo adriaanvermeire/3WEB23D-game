@@ -42,10 +42,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 99
+=======
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
+  vertical: 0
+  controlID: 104
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,7 +218,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 100
+=======
+  controlID: 118
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +246,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 101
+=======
+  controlID: 119
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -460,20 +475,26 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/DialogueSystem
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/DialogueSystem
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Jeroen\Documents\GitHub\3WEB23D-game\3WEB23D_unity-project\3WEB23D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 61}
+<<<<<<< HEAD
     m_SelectedIDs: 14340000
     m_LastClickedID: 13332
     m_ExpandedIDs: 000000001434000066370000a0380000f2380000963a000060400000f840000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 92170000
+    m_LastClickedID: 6034
+    m_ExpandedIDs: 00000000d6090000300d0000860e0000d80e000090100000b81600005217000000ca9a3bffffff7f
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +522,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000001434000066370000a0380000f2380000963a000060400000f8400000
+=======
+    m_ExpandedIDs: 00000000d6090000300d0000860e0000d80e000090100000b816000052170000
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,7 +646,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 8eeaffff00000000
+=======
+    m_ExpandedIDs: f6f9ffff00000000f81800001c1900002c190000
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,14 +701,20 @@ MonoBehaviour:
     height: 565
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 7271.7274715040285
-  m_2DMode: 0
+  lastFramingTime: 29874.885735064934
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 383.18033, y: 1.0160198, z: 79.41895}
     speed: 2
     m_Value: {x: 383.18033, y: 1.0160198, z: 79.41895}
+=======
+    m_Target: {x: 629.2283, y: 265.59293, z: 14.742816}
+    speed: 2
+    m_Value: {x: 629.2283, y: 265.59293, z: 14.742816}
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -699,14 +734,15 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.3925894, y: 0.5606856, z: -0.3418338, w: 0.64393705}
     speed: 2
     m_Value: {x: 0.3925894, y: 0.5606856, z: -0.3418338, w: 0.64393705}
@@ -714,12 +750,21 @@ MonoBehaviour:
     m_Target: 22.615427
     speed: 2
     m_Value: 22.615427
-  m_Ortho:
-    m_Target: 0
+=======
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: 0
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 615.3435
+    speed: 2
+    m_Value: 615.3435
+>>>>>>> 537c09829f920c17323a72c999afe5f8ee53edc2
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

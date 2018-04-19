@@ -302,6 +302,7 @@
   <ItemGroup>
     <Compile Include="Assets\character\scripts\CameraMovement.cs" />
     <Compile Include="Assets\character\scripts\CharacterMovement.cs" />
+    <Compile Include="Assets\DialogueSystem\DialogueChoice.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
