@@ -5,22 +5,41 @@ using UnityEngine.UI;
 using UnityEngine.Playables;
 
 public class StartDialogue : MonoBehaviour {
-    public static GameObject timeline;
+    public GameObject player;
+    public GameObject currentWaypoint;
     public GameObject dialogueUI;
-    public PlayableDirector playableDirector = timeline.GetComponent<PlayableDirector>();
+    public PlayableDirector playableDirector;
     public Button beginDialogueButton;
+
+    private bool isInTrigger = false;
+    private bool playableDirectorHasStopped = false;
+
+    void Start()
+    {
+        playableDirector = playableDirector.GetComponent<PlayableDirector>();
+    }
 
     private void Update()
     {
-        if (playableDirector.state != PlayState.Playing)
+        if (playableDirectorHasStopped)
         {
             dialogueUI.SetActive(false);
+            player.GetComponent<CameraMovement>().enabled = true;
+            currentWaypoint.SetActive(true);
+            if (isInTrigger)
+            {
+                beginDialogueButton.gameObject.SetActive(true);
+            }
         }
     }
 
     private void OnTalkButtonClicked()
     {
         dialogueUI.SetActive(true);
+        player.GetComponent<CameraMovement>().enabled = false;
+        currentWaypoint.SetActive(false);
+        playableDirectorHasStopped = false;
+        beginDialogueButton.gameObject.SetActive(false);
         playableDirector.Play();
     }
 
@@ -31,6 +50,7 @@ public class StartDialogue : MonoBehaviour {
         {
             Debug.Log("object is IN dialogue trigger");
             //if the above is true set isInTrigger to true
+            isInTrigger = true;
             beginDialogueButton.gameObject.SetActive(true);
             beginDialogueButton.onClick.AddListener(OnTalkButtonClicked);
         }
@@ -43,7 +63,28 @@ public class StartDialogue : MonoBehaviour {
         {
             Debug.Log("object LEFT dialogue trigger");
             //if the above is true set isInTrigger to false
+            isInTrigger = false;
             beginDialogueButton.gameObject.SetActive(false);
         }
     }
+
+    void OnEnable()
+    {
+        playableDirector.stopped += OnPlayableDirectorStopped;
+    }
+
+    void OnPlayableDirectorStopped(PlayableDirector aDirector)
+    {
+        if (playableDirector == aDirector)
+        {
+            Debug.Log("PlayableDirector named " + aDirector.name + " is now stopped.");
+            playableDirectorHasStopped = true;
+        }
+    }
+
+    void OnDisable()
+    {
+        playableDirector.stopped -= OnPlayableDirectorStopped;
+    }
+
 }

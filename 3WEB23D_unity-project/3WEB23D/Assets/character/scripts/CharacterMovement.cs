@@ -6,14 +6,14 @@ using UnityEngine.AI;
 
 public class CharacterMovement : MonoBehaviour {
 
+    public GameObject player;
+    private NavMeshAgent playerAgent;
+
     public bool forwardsEnabled = false;
     public bool backwardsEnabled = false;
     public bool rightEnabled = false;
     public bool leftEnabled = false;
-
-    public GameObject player;
-    private NavMeshAgent playerAgent;
-
+   
     public Button forwardsButton;
     public Button backwardsButton;
     public Button rightButton;

@@ -81,7 +81,13 @@
      <Compile Include="Assets\DefaultPlayables\Video\VideoSchedulerPlayableBehaviour.cs" />
      <Compile Include="Assets\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
      <Compile Include="Assets\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
-     <Compile Include="Assets\DialogueSystem\DialogueChoice.cs" />
+     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceBehaviour.cs" />
+     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceClip.cs" />
+     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceTrack.cs" />
+     <Compile Include="Assets\GameState.cs" />
+     <Compile Include="Assets\GoToTime\GoToTimeBehaviour.cs" />
+     <Compile Include="Assets\GoToTime\GoToTimeClip.cs" />
+     <Compile Include="Assets\GoToTime\GoToTimeTrack.cs" />
      <Compile Include="Assets\NPC\scripts\StartDialogue.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
