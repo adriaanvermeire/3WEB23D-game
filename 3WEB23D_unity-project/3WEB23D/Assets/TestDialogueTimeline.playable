@@ -169,7 +169,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: Hello sir!
+    text: Goede dag meneer!
 --- !u!114 &114146645038194998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,21 +183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     timeToSkipTo: 11.16
---- !u!114 &114166962522483950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
-  m_Name: TextSwitcherClip
-  m_EditorClassIdentifier: 
-  template:
-    color: {r: 1, g: 1, b: 1, a: 1}
-    fontSize: 24
-    text: The end.
 --- !u!114 &114186462462348734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,40 +240,6 @@ MonoBehaviour:
     m_Asset: {fileID: 114098936766195940}
     m_UnderlyingAsset: {fileID: 114098936766195940}
     m_Duration: 1.7833333333333334
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 114186462462348734}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: TextSwitcherClip
-    m_Version: 1
-  - m_Start: 11.159999999999998
-    m_ClipIn: 0
-    m_Asset: {fileID: 114166962522483950}
-    m_UnderlyingAsset: {fileID: 114166962522483950}
-    m_Duration: 1
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114186462462348734}
     m_EaseInDuration: 0
@@ -539,8 +490,8 @@ MonoBehaviour:
     gameState: {fileID: 0}
     firstButtonActive: 1
     secondButtonActive: 1
-    firstButtonString: wow
-    secondButtonString: lolol
+    firstButtonString: Een test dialoog?
+    secondButtonString: Ok merci.
     clipStartTimeSeconds: 5
     clipEndTimeSeconds: 7
     firstSkipToSeconds: 7
@@ -705,7 +656,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: Yeah WOW!
+    text: Ja een test dialoog.
 --- !u!114 &114432418446880016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -720,7 +671,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: Dafuq?
+    text: Geen probleem.
 --- !u!114 &114502822907006660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -767,7 +718,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: This is a test dialogue.
+    text: Dit is een test dialoog.
 --- !u!114 &114732376632456070
 MonoBehaviour:
   m_ObjectHideFlags: 1
