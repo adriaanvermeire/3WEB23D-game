@@ -6,11 +6,12 @@ public class CameraMovement : MonoBehaviour {
 
 
     public float rotationSpeed = 3.5f;
+    public float startRotation = 0;
     private float Y;
 
     // Use this for initialization
     void Start () {
-        transform.rotation = Quaternion.Euler(0, 90f, 0);
+        transform.rotation = Quaternion.Euler(0, startRotation, 0);
     }
 	
 	// Update is called once per frame

@@ -239,6 +239,17 @@ ModelImporter:
     100466: Upper_Body_2
     100468: Upper_Body_3
     100470: Upper_Body_4
+    100472: Bus_Vloer_1
+    100474: Bus_Wanden
+    100476: door-front
+    100478: door-midle-1
+    100480: door-midle-2
+    100482: Palen_1
+    100484: Stuur_1
+    100486: windows
+    100488: door_front
+    100490: door_midle_1
+    100492: door_midle_2
     400000: Achterste_stoelen
     400002: Bus
     400004: //RootNode
@@ -475,8 +486,30 @@ ModelImporter:
     400466: Upper_Body_2
     400468: Upper_Body_3
     400470: Upper_Body_4
+    400472: Bus_Vloer_1
+    400474: Bus_Wanden
+    400476: door-front
+    400478: door-midle-1
+    400480: door-midle-2
+    400482: Palen_1
+    400484: Stuur_1
+    400486: windows
+    400488: door_front
+    400490: door_midle_1
+    400492: door_midle_2
     2000000: CINEMA_4D_Editor
     2100000: No Name
+    2100002: None__bus-floor
+    2100004: None__bus-wals
+    2100006: None__bus-stoelen
+    2100008: None__stuur
+    2100010: None__bus-palen
+    2100012: None__bus-door-midle-2
+    2100014: None__bus-door-midle-1
+    2100016: unnamed
+    2100018: None__bus-door-front
+    2100020: None__bus-windows_001
+    2100022: Bus_Vloer_1
     2300000: Bus
     2300002: Cube
     2300004: Cube_1
@@ -663,6 +696,17 @@ ModelImporter:
     2300366: Upper_Body_2
     2300368: Upper_Body_3
     2300370: Upper_Body_4
+    2300372: Bus_Vloer_1
+    2300374: Bus_Wanden
+    2300376: door-front
+    2300378: door-midle-1
+    2300380: door-midle-2
+    2300382: Palen_1
+    2300384: Stuur_1
+    2300386: windows
+    2300388: door_front
+    2300390: door_midle_1
+    2300392: door_midle_2
     3300000: Bus
     3300002: Cube
     3300004: Cube_1
@@ -849,6 +893,17 @@ ModelImporter:
     3300366: Upper_Body_2
     3300368: Upper_Body_3
     3300370: Upper_Body_4
+    3300372: Bus_Vloer_1
+    3300374: Bus_Wanden
+    3300376: door-front
+    3300378: door-midle-1
+    3300380: door-midle-2
+    3300382: Palen_1
+    3300384: Stuur_1
+    3300386: windows
+    3300388: door_front
+    3300390: door_midle_1
+    3300392: door_midle_2
     4300000: Cube_1
     4300002: Cylinder_1
     4300004: Cube_1_2
@@ -1035,9 +1090,36 @@ ModelImporter:
     4300366: Neck_4
     4300368: Joint_4
     4300370: Bus
+    4300372: Bus_Vloer_1
+    4300374: Bus_Wanden
+    4300376: Stuur_1
+    4300378: Palen_1
+    4300380: door-midle-2
+    4300382: door-midle-1
+    4300384: door-front
+    4300386: windows
+    4300388: door_front
+    4300390: door_midle_1
+    4300392: door_midle_2
+    6400000: Bus_Vloer_1
+    6400002: Bus_Wanden
+    6400004: door_front
+    6400006: door_midle_1
+    6400008: door_midle_2
+    6400010: Palen_1
+    6400012: Stoel_1
+    6400014: Stuur_1
+    6400016: windows
     2186277476908879412: ImportLogs
     2186277476908879414: ImportLogs
-  externalObjects: {}
+    2186277476908879416: ImportLogs
+    2186277476908879418: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bus_Vloer_1
+    second: {fileID: 2100000, guid: b30d6354c7bf93845b12f4b0d9e2762f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -1068,13 +1150,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 110
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
