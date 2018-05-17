@@ -15,6 +15,10 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 114623070840669068}
   - {fileID: 114598043994350628}
+  - {fileID: 114567156045430724}
+  - {fileID: 114308177312191984}
+  - {fileID: 114381335656994662}
+  - {fileID: 114802039906054508}
   - {fileID: 114209531598758500}
   - {fileID: 114954988486592298}
   - {fileID: 114134622917330254}
@@ -157,6 +161,71 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 1
   m_Events: []
+--- !u!114 &114018532788794768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Speler: Ik denk toch dat er een probleem is.'
+--- !u!114 &114024696463525442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c4aed4c4ce7ac4e9f888e4c3827cde, type: 3}
+  m_Name: GoToTimeClip
+  m_EditorClassIdentifier: 
+  template:
+    timeToSkipTo: 57.38
+--- !u!114 &114062486219266600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 442072544, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
+--- !u!114 &114069632112163710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 442072544, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
+--- !u!114 &114089150786803048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Man: Zie er is geen probleem LAAT ONS NU MET RUST!'
 --- !u!114 &114134622917330254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,10 +244,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.8333333333333334
+  - m_Start: 4.366666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114320725543328450}
-    m_Duration: 1.7833333333333334
+    m_Duration: 2.1999999999999997
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114134622917330254}
     m_EaseInDuration: 0
@@ -208,10 +277,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 3.216666666666667
+  - m_Start: 6.566666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114966587853049120}
-    m_Duration: 1.7833333333333334
+    m_Duration: 1.9666666666666672
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114134622917330254}
     m_EaseInDuration: 0
@@ -226,7 +295,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -241,10 +328,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 7
+  - m_Start: 12.729999999999997
     m_ClipIn: 0
     m_Asset: {fileID: 114311427534742240}
-    m_Duration: 1.7799999999999994
+    m_Duration: 5.053333333333335
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114134622917330254}
     m_EaseInDuration: 0
@@ -274,7 +361,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 9.379999999999999
+  - m_Start: 23.876666666666623
     m_ClipIn: 0
     m_Asset: {fileID: 114616355062890116}
     m_Duration: 1.7799999999999994
@@ -307,7 +394,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 13.159999999999998
+  - m_Start: 33.51999999999987
     m_ClipIn: 0
     m_Asset: {fileID: 114167712596080554}
     m_Duration: 1.7799999999999994
@@ -315,7 +402,73 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114134622917330254}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 35.299999999999855
+    m_ClipIn: 0
+    m_Asset: {fileID: 114896763632841408}
+    m_Duration: 1.7799999999999994
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 37.07999999999983
+    m_ClipIn: 0
+    m_Asset: {fileID: 114149017692399898}
+    m_Duration: 1.7799999999999994
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -340,9 +493,9 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 14.939999999999998
+  - m_Start: 45.63666666666666
     m_ClipIn: 0
-    m_Asset: {fileID: 114896763632841408}
+    m_Asset: {fileID: 114740376976028470}
     m_Duration: 1.7799999999999994
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114134622917330254}
@@ -373,9 +526,225 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TextSwitcherClip
     m_Version: 1
-  - m_Start: 16.72
+  - m_Start: 8.533333333333335
     m_ClipIn: 0
-    m_Asset: {fileID: 114149017692399898}
+    m_Asset: {fileID: 114089150786803048}
+    m_Duration: 3.883333333333331
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 20.096666666666643
+    m_ClipIn: 0
+    m_Asset: {fileID: 114588267549828430}
+    m_Duration: 3.77999999999998
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 29.739999999999927
+    m_ClipIn: 0
+    m_Asset: {fileID: 114018532788794768}
+    m_Duration: 3.77999999999998
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 40.859999999999815
+    m_ClipIn: 0
+    m_Asset: {fileID: 114843940599550374}
+    m_Duration: 4.7766666666668485
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 53.38333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114275112058141864}
+    m_Duration: 3.9966666666667123
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 47.71999999999998
+    m_ClipIn: 0
+    m_Asset: {fileID: 114653404230141668}
+    m_Duration: 5.663333333333355
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114134622917330254}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TextSwitcherClip
+    m_Version: 1
+  - m_Start: 27.656666666666624
+    m_ClipIn: 0
+    m_Asset: {fileID: 114975645493203058}
     m_Duration: 1.7799999999999994
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114134622917330254}
@@ -437,6 +806,50 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
     text: 'Man: Ze vroeg ernaar!'
+--- !u!114 &114190732574862490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
+  m_Name: DialogueChoiceClip
+  m_EditorClassIdentifier: 
+  template:
+    firstButton: {fileID: 0}
+    secondButton: {fileID: 0}
+    firstButtonText: {fileID: 0}
+    secondButtonText: {fileID: 0}
+    gameState: {fileID: 0}
+    firstButtonActive: 1
+    secondButtonActive: 1
+    firstButtonString: Praat met meisje.
+    secondButtonString: Praat met man.
+    clipStartTimeSeconds: 0.366666666666667
+    clipEndTimeSeconds: 2.36666666666667
+    firstSkipToSeconds: 2.36666666666667
+    secondSkipToSeconds: 18.0966666666666
+    firstButtonIsConsequence: 0
+    secondButtonIsConsequence: 0
+    FirstButtonChoiceId: 0
+    SecondButtonChoiceId: 0
+  firstButton:
+    exposedName: 236889b63c44813478bfcfc773546c68
+    defaultValue: {fileID: 0}
+  secondButton:
+    exposedName: f4c09ed09931a3845b2f9ad76eb9c379
+    defaultValue: {fileID: 0}
+  firstButtonText:
+    exposedName: 519f2d71f3ddbf546b00561110648c2e
+    defaultValue: {fileID: 0}
+  secondButtonText:
+    exposedName: 8f9cc4a2b4e3ca749820ecf21312d436
+    defaultValue: {fileID: 0}
+  gameStateGameObject:
+    exposedName: 6116ab7c33d418a4997461b62767fd04
+    defaultValue: {fileID: 0}
 --- !u!114 &114209531598758500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,9 +868,9 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 5
+  - m_Start: 0.36666666666666664
     m_ClipIn: 0
-    m_Asset: {fileID: 114843962364018822}
+    m_Asset: {fileID: 114190732574862490}
     m_Duration: 2
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114209531598758500}
@@ -524,81 +937,57 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: DialogueChoiceClip
     m_Version: 1
-  - m_Start: 11.159999999999998
+  m_Version: 1
+--- !u!114 &114231560016388222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 442072544, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
+--- !u!114 &114275112058141864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Man: Ok ik ben al weg zeg ze verdragen hier niets meer!'
+--- !u!114 &114308177312191984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916f0b7756d1c8f4fae84537e49177b4, type: 3}
+  m_Name: Dialogue Choice Track (5)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 25.656666666666624
     m_ClipIn: 0
-    m_Asset: {fileID: 114965819894753200}
+    m_Asset: {fileID: 114460698648592434}
     m_Duration: 2
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 114209531598758500}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0
-    m_BlendOutDuration: 0
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: DialogueChoiceClip
-    m_Version: 1
-  - m_Start: 18.5
-    m_ClipIn: 0
-    m_Asset: {fileID: 114844285274211864}
-    m_Duration: 2
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 114209531598758500}
+    m_ParentTrack: {fileID: 114308177312191984}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0
@@ -678,6 +1067,17 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
     text: 'Speler: Hey leuk je weer eens te zien! ga jij nog naar die ene school?'
+--- !u!114 &114316532595784260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 442072544, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
 --- !u!114 &114320725543328450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -693,6 +1093,278 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
     text: 'Speler: Is er een probleem mevrouw.'
+--- !u!114 &114381335656994662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916f0b7756d1c8f4fae84537e49177b4, type: 3}
+  m_Name: Dialogue Choice Track (4)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 18.09666666666662
+    m_ClipIn: 0
+    m_Asset: {fileID: 114697599530849526}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114381335656994662}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: DialogueChoiceClip
+    m_Version: 1
+  m_Version: 1
+--- !u!114 &114436175244632120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c4aed4c4ce7ac4e9f888e4c3827cde, type: 3}
+  m_Name: GoToTimeClip
+  m_EditorClassIdentifier: 
+  template:
+    timeToSkipTo: 57.38
+--- !u!114 &114457882619817904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c4aed4c4ce7ac4e9f888e4c3827cde, type: 3}
+  m_Name: GoToTimeClip
+  m_EditorClassIdentifier: 
+  template:
+    timeToSkipTo: 57.38
+--- !u!114 &114460698648592434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
+  m_Name: DialogueChoiceClip
+  m_EditorClassIdentifier: 
+  template:
+    firstButton: {fileID: 0}
+    secondButton: {fileID: 0}
+    firstButtonText: {fileID: 0}
+    secondButtonText: {fileID: 0}
+    gameState: {fileID: 0}
+    firstButtonActive: 1
+    secondButtonActive: 1
+    firstButtonString: Ok.
+    secondButtonString: Ik denk toch dat er een probleem is.
+    clipStartTimeSeconds: 25.6566666666666
+    clipEndTimeSeconds: 27.6566666666666
+    firstSkipToSeconds: 27.6566666666666
+    secondSkipToSeconds: 29.7399999999999
+    firstButtonIsConsequence: 1
+    secondButtonIsConsequence: 0
+    FirstButtonChoiceId: s01d01c03
+    SecondButtonChoiceId: t01c002
+  firstButton:
+    exposedName: a6a3beaaea9cadb468cbb89a91765826
+    defaultValue: {fileID: 0}
+  secondButton:
+    exposedName: 1ec94dd4fabff9a42b82cc5b26a4b584
+    defaultValue: {fileID: 0}
+  firstButtonText:
+    exposedName: e735aabed29493146a9bf628dc463d08
+    defaultValue: {fileID: 0}
+  secondButtonText:
+    exposedName: 145ece91480cef7439072be40d36da13
+    defaultValue: {fileID: 0}
+  gameStateGameObject:
+    exposedName: 1f3ad6e7028a478448618b7831ef15b1
+    defaultValue: {fileID: 0}
+--- !u!114 &114565907424939826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 442072544, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
+--- !u!114 &114567156045430724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916f0b7756d1c8f4fae84537e49177b4, type: 3}
+  m_Name: Dialogue Choice Track (6)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 38.859999999999815
+    m_ClipIn: 0
+    m_Asset: {fileID: 114799482831288414}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114567156045430724}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: DialogueChoiceClip
+    m_Version: 1
+  m_Version: 1
+--- !u!114 &114588267549828430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Speler: Is er een probleem meneer.'
 --- !u!114 &114598043994350628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -772,6 +1444,109 @@ MonoBehaviour:
   m_ApplyAvatarMask: 1
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &114653404230141668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Speler: LAAT HAAR MET RUST OF IK BEL DE POLITIE.'
+--- !u!114 &114697599530849526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
+  m_Name: DialogueChoiceClip
+  m_EditorClassIdentifier: 
+  template:
+    firstButton: {fileID: 0}
+    secondButton: {fileID: 0}
+    firstButtonText: {fileID: 0}
+    secondButtonText: {fileID: 0}
+    gameState: {fileID: 0}
+    firstButtonActive: 1
+    secondButtonActive: 0
+    firstButtonString: Is er een probleem?
+    secondButtonString: 
+    clipStartTimeSeconds: 18.0966666666666
+    clipEndTimeSeconds: 20.0966666666666
+    firstSkipToSeconds: 20.0966666666666
+    secondSkipToSeconds: 0
+    firstButtonIsConsequence: 0
+    secondButtonIsConsequence: 0
+    FirstButtonChoiceId: 0
+    SecondButtonChoiceId: 0
+  firstButton:
+    exposedName: b746aaeadde8bdd4dbb31961afa3af2c
+    defaultValue: {fileID: 0}
+  secondButton:
+    exposedName: f78d00dc1c799664084ab4f62a656010
+    defaultValue: {fileID: 0}
+  firstButtonText:
+    exposedName: 77d4b5ed214acae488d81e3e96639c40
+    defaultValue: {fileID: 0}
+  secondButtonText:
+    exposedName: d59826308c9eb9348bec46098ee79fe6
+    defaultValue: {fileID: 0}
+  gameStateGameObject:
+    exposedName: 5711914ceafa4b843ba075c3684091d8
+    defaultValue: {fileID: 0}
+--- !u!114 &114702471736371784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
+  m_Name: DialogueChoiceClip
+  m_EditorClassIdentifier: 
+  template:
+    firstButton: {fileID: 0}
+    secondButton: {fileID: 0}
+    firstButtonText: {fileID: 0}
+    secondButtonText: {fileID: 0}
+    gameState: {fileID: 0}
+    firstButtonActive: 1
+    secondButtonActive: 1
+    firstButtonString: Is er een probleem?
+    secondButtonString: Doe alsof je meisje kent.
+    clipStartTimeSeconds: 2.36666666666667
+    clipEndTimeSeconds: 4.36666666666667
+    firstSkipToSeconds: 4.36666666666667
+    secondSkipToSeconds: 12.73
+    firstButtonIsConsequence: 1
+    secondButtonIsConsequence: 1
+    FirstButtonChoiceId: s01d01c01
+    SecondButtonChoiceId: s01d01c02
+  firstButton:
+    exposedName: 97f86705526a1114c90878c7f63393a8
+    defaultValue: {fileID: 0}
+  secondButton:
+    exposedName: eb1b20e91ca76264588d034f96f46f22
+    defaultValue: {fileID: 0}
+  firstButtonText:
+    exposedName: a9e746cb433fd664db71013ad1770310
+    defaultValue: {fileID: 0}
+  secondButtonText:
+    exposedName: 9e159d09fe236d745a519bc272a67f5e
+    defaultValue: {fileID: 0}
+  gameStateGameObject:
+    exposedName: 48814e5978988a8409bfe5836524263a
+    defaultValue: {fileID: 0}
 --- !u!114 &114725104863844852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -801,10 +1576,79 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0
+  - m_Start: 51.95
     m_ClipIn: 0
     m_Asset: {fileID: 114725104863844852}
-    m_Duration: 11.159999999999998
+    m_Duration: 5.430000000000042
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114736322433986928}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+    m_Version: 1
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114565907424939826}
+    m_Duration: 51.95
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114736322433986928}
     m_EaseInDuration: 0
@@ -872,6 +1716,21 @@ MonoBehaviour:
     m_Version: 1
   m_Version: 1
   m_PostPlaybackState: 2
+--- !u!114 &114740376976028470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Man: Haha en wie denk jij te zijn jongen.'
 --- !u!114 &114760363144499612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -884,8 +1743,8 @@ MonoBehaviour:
   m_Name: GoToTimeClip
   m_EditorClassIdentifier: 
   template:
-    timeToSkipTo: 13.16
---- !u!114 &114843962364018822
+    timeToSkipTo: 57.38
+--- !u!114 &114799482831288414
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -904,32 +1763,32 @@ MonoBehaviour:
     gameState: {fileID: 0}
     firstButtonActive: 1
     secondButtonActive: 1
-    firstButtonString: Doe alsof je het meisje kent.
-    secondButtonString: Vraag aan jongen of er een probleem is.
-    clipStartTimeSeconds: 5
-    clipEndTimeSeconds: 7
-    firstSkipToSeconds: 7
-    secondSkipToSeconds: 9.38
+    firstButtonString: Vraag man om haar met rust te laten (vriendelijk)
+    secondButtonString: Vraag man om haar met rust te laten (boos)
+    clipStartTimeSeconds: 38.8599999999998
+    clipEndTimeSeconds: 40.8599999999998
+    firstSkipToSeconds: 40.8599999999998
+    secondSkipToSeconds: 47.72
     firstButtonIsConsequence: 1
     secondButtonIsConsequence: 1
-    FirstButtonChoiceId: t01c001
-    SecondButtonChoiceId: t01c002
+    FirstButtonChoiceId: s01d01c04
+    SecondButtonChoiceId: s01d01c05
   firstButton:
-    exposedName: 9b861cf9ab56183478272050c2029f7d
+    exposedName: 9dd0ffbf43b4702429c479f0ddebbad8
     defaultValue: {fileID: 0}
   secondButton:
-    exposedName: f278d79f331e7824bad0bf87dfdb3132
+    exposedName: d564466de21ff5643986432af7f855be
     defaultValue: {fileID: 0}
   firstButtonText:
-    exposedName: ac014db0cf3d3494bbf1ed4e8fb56df0
+    exposedName: 623f5c11ed9abaa4f883d2c2271d24d1
     defaultValue: {fileID: 0}
   secondButtonText:
-    exposedName: 9b7062921dc45964787dc2cd96fae2ae
+    exposedName: 64ae1cd8b5b282246a04f204d7245e6f
     defaultValue: {fileID: 0}
   gameStateGameObject:
-    exposedName: be814994de0033947a798160227cdba3
+    exposedName: 69f20ce7e25167e498c5fd48926177c5
     defaultValue: {fileID: 0}
---- !u!114 &114844285274211864
+--- !u!114 &114802039906054508
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -937,42 +1796,101 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
-  m_Name: DialogueChoiceClip
+  m_Script: {fileID: 11500000, guid: 916f0b7756d1c8f4fae84537e49177b4, type: 3}
+  m_Name: Dialogue Choice Track (3)
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 2.3666666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114702471736371784}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114802039906054508}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: DialogueChoiceClip
+    m_Version: 1
+  m_Version: 1
+--- !u!114 &114843940599550374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
   m_EditorClassIdentifier: 
   template:
-    firstButton: {fileID: 0}
-    secondButton: {fileID: 0}
-    firstButtonText: {fileID: 0}
-    secondButtonText: {fileID: 0}
-    gameState: {fileID: 0}
-    firstButtonActive: 1
-    secondButtonActive: 1
-    firstButtonString: Vraag om meisje met rust te laten. (beleefd).
-    secondButtonString: Vraag om meisje met rust te laten. (boos).
-    clipStartTimeSeconds: 5
-    clipEndTimeSeconds: 7
-    firstSkipToSeconds: 7
-    secondSkipToSeconds: 9.38
-    firstButtonIsConsequence: 1
-    secondButtonIsConsequence: 1
-    FirstButtonChoiceId: t01c001
-    SecondButtonChoiceId: t01c002
-  firstButton:
-    exposedName: 861da23393048df43afb1d879ed99dd9
-    defaultValue: {fileID: 0}
-  secondButton:
-    exposedName: 3e4edc9abcf144642ae49cab447a95e8
-    defaultValue: {fileID: 0}
-  firstButtonText:
-    exposedName: 2f2272711dfd98640bdef63038f420e8
-    defaultValue: {fileID: 0}
-  secondButtonText:
-    exposedName: 35d0c3e446d9f324984cb6f6d3d8da1e
-    defaultValue: {fileID: 0}
-  gameStateGameObject:
-    exposedName: 3558a635204e5d54aa0e041cdfcc3ec1
-    defaultValue: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Speler: Kunt u haar alstublieft met rust laten.'
 --- !u!114 &114870392877492010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -998,7 +1916,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: 'Speler: Mevrouw is dit waar.13.16'
+    text: 'Speler: Mevrouw is dit waar.'
 --- !u!114 &114954988486592298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1017,10 +1935,217 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 8.78
+  - m_Start: 12.416666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114760363144499612}
-    m_Duration: 0.5999999999999996
+    m_Duration: 0.3133333333333308
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114954988486592298}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: GoToTimeClip
+    m_Version: 1
+  - m_Start: 47.416666666666664
+    m_ClipIn: 0
+    m_Asset: {fileID: 114457882619817904}
+    m_Duration: 0.3033333333333026
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114954988486592298}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: GoToTimeClip
+    m_Version: 1
+  - m_Start: 17.78333333333331
+    m_ClipIn: 0
+    m_Asset: {fileID: 114436175244632120}
+    m_Duration: 0.3133333333333326
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114954988486592298}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: GoToTimeClip
+    m_Version: 1
+  - m_Start: 29.436666666666625
+    m_ClipIn: 0
+    m_Asset: {fileID: 114024696463525442}
+    m_Duration: 0.3033333333333026
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114954988486592298}
     m_EaseInDuration: 0
@@ -1087,50 +2212,6 @@ MonoBehaviour:
     m_DisplayName: GoToTimeClip
     m_Version: 1
   m_Version: 1
---- !u!114 &114965819894753200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be4910ce6a5971d45bcef2ad8cb6d39c, type: 3}
-  m_Name: DialogueChoiceClip
-  m_EditorClassIdentifier: 
-  template:
-    firstButton: {fileID: 0}
-    secondButton: {fileID: 0}
-    firstButtonText: {fileID: 0}
-    secondButtonText: {fileID: 0}
-    gameState: {fileID: 0}
-    firstButtonActive: 1
-    secondButtonActive: 1
-    firstButtonString: Ok.
-    secondButtonString: Ik denk dat mevrouw het toch niet ok vindt.
-    clipStartTimeSeconds: 5
-    clipEndTimeSeconds: 7
-    firstSkipToSeconds: 7
-    secondSkipToSeconds: 9.38
-    firstButtonIsConsequence: 1
-    secondButtonIsConsequence: 1
-    FirstButtonChoiceId: t01c001
-    SecondButtonChoiceId: t01c002
-  firstButton:
-    exposedName: 8d91fb97365dd7c4991b4fea2e68af33
-    defaultValue: {fileID: 0}
-  secondButton:
-    exposedName: 663f0e19fc2230242a28fafae14d5a0a
-    defaultValue: {fileID: 0}
-  firstButtonText:
-    exposedName: 1466109511db42648b157f23305bbcc3
-    defaultValue: {fileID: 0}
-  secondButtonText:
-    exposedName: bf6a252a1db818c47a9d19d689087755
-    defaultValue: {fileID: 0}
-  gameStateGameObject:
-    exposedName: 5d40e34ffd9601b4c8ff5698aa1545cc
-    defaultValue: {fileID: 0}
 --- !u!114 &114966587853049120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,6 +2227,21 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
     text: 'Meisje: (bang) Nee.'
+--- !u!114 &114975645493203058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d683f551d33a84db12bb6fa65573f9, type: 3}
+  m_Name: TextSwitcherClip
+  m_EditorClassIdentifier: 
+  template:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fontSize: 24
+    text: 'Speler: Ok.'
 --- !u!114 &114979640807940808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1164,9 +2260,285 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 5
+  - m_Start: 0.3666666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114870392877492010}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114979640807940808}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+    m_Version: 1
+  - m_Start: 2.366666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114062486219266600}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114979640807940808}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+    m_Version: 1
+  - m_Start: 18.096666666666643
+    m_ClipIn: 0
+    m_Asset: {fileID: 114316532595784260}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114979640807940808}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+    m_Version: 1
+  - m_Start: 25.656666666666624
+    m_ClipIn: 0
+    m_Asset: {fileID: 114069632112163710}
+    m_Duration: 2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114979640807940808}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+    m_Version: 1
+  - m_Start: 38.859999999999815
+    m_ClipIn: 0
+    m_Asset: {fileID: 114231560016388222}
     m_Duration: 2
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114979640807940808}

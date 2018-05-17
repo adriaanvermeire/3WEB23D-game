@@ -11,36 +11,48 @@ public class GameState : MonoBehaviour {
     private bool choseWOW = false;
     private bool choseLolol = false;
     //---end of test states---
+    private bool busSceneGirlFirstChoice = false;
+    private bool busSceneGirlSecondChoice = false;
+    private bool busSceneManFirstChoice = false;
+    private bool busSceneManSecondChoice = false;
+    private bool busSceneManThirdChoice = false;
 
 
     private bool testChapterPlaying = false;
 
-    private byte amountOfTimeToDisplyDebug1;
-    private byte amountOfTimeToDisplyDebug2;
+    private byte amountOfTimeToDisplayDebug1;
+    private byte amountOfTimeToDisplayDebug2;
 
     // Use this for initialization
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();
-        amountOfTimeToDisplyDebug1 = 0;
-        amountOfTimeToDisplyDebug2 = 0;
+        amountOfTimeToDisplayDebug1 = 0;
+        amountOfTimeToDisplayDebug2 = 0;
     }
 
     // Update is called once per frame
     void Update () {
         if (currentScene.name == "gamplay-test-scene")
         {
-            if (choseWOW && amountOfTimeToDisplyDebug1 == 0)
+            if (choseWOW && amountOfTimeToDisplayDebug1 == 0)
             {
                 Debug.Log("You chose: wow");
-                amountOfTimeToDisplyDebug1++;
+                amountOfTimeToDisplayDebug1++;
             }
-            if (choseLolol && amountOfTimeToDisplyDebug2 == 0)
+            if (choseLolol && amountOfTimeToDisplayDebug2 == 0)
             {
                 Debug.Log("You chose: lolol");
-                amountOfTimeToDisplyDebug2++;
+                amountOfTimeToDisplayDebug2++;
             }
         }
+        //if (currentScene.name == "Bus-scene")
+        //{
+        //    if (busSceneGirlFirstChoice || busSceneGirlSecondChoice || busSceneManFirstChoice || busSceneManSecondChoice || busSceneManThirdChoice)
+        //    {
+        //        loadSquareScene();
+        //    }
+        //}
 	}
 
     public void SetState(string choiceId)
@@ -55,12 +67,32 @@ public class GameState : MonoBehaviour {
                 choseLolol = true;
                 break;
             //---end of test case's---
-
+            case "s01d01c01":
+                busSceneGirlFirstChoice = true;
+                Debug.Log("Girl first choice");
+                break;
+            case "s01d01c02":
+                busSceneGirlSecondChoice = true;
+                break;
+            case "s01d01c03":
+                busSceneManFirstChoice = true;
+                break;
+            case "s01d01c04":
+                busSceneManSecondChoice = true;
+                break;
+            case "s01d01c05":
+                busSceneManThirdChoice = true;
+                break;
 
 
             default:
                 break;
         }
+    }
+
+    public void loadSquareScene()
+    {
+        SceneManager.LoadScene("square-scene");
     }
 
 }
