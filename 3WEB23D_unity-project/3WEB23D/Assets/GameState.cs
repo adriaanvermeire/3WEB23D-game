@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameState : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class GameState : MonoBehaviour {
     //---test states from the gamplay-test-scene---
     private bool choseWOW = false;
     private bool choseLolol = false;
+    private int sec;
     //---end of test states---
     private bool busSceneGirlFirstChoice = false;
     private bool busSceneGirlSecondChoice = false;
@@ -17,6 +19,9 @@ public class GameState : MonoBehaviour {
     private bool busSceneManSecondChoice = false;
     private bool busSceneManThirdChoice = false;
 
+    public Image imagebackround;
+    public Text lostTxt;
+    public Text wonTxt;
 
     private bool testChapterPlaying = false;
 
@@ -29,6 +34,10 @@ public class GameState : MonoBehaviour {
         currentScene = SceneManager.GetActiveScene();
         amountOfTimeToDisplayDebug1 = 0;
         amountOfTimeToDisplayDebug2 = 0;
+        imagebackround.gameObject.SetActive(false);
+        lostTxt.gameObject.SetActive(false);
+        wonTxt.gameObject.SetActive(false);
+        sec = 0;
     }
 
     // Update is called once per frame
@@ -70,18 +79,28 @@ public class GameState : MonoBehaviour {
             case "s01d01c01":
                 busSceneGirlFirstChoice = true;
                 Debug.Log("Girl first choice");
+                sec = 7;
+                StartCoroutine(waitFiveSecondsWhenLost());
                 break;
             case "s01d01c02":
                 busSceneGirlSecondChoice = true;
+                sec = 5;
+                StartCoroutine(waitFiveSecondsWhenWon());
                 break;
             case "s01d01c03":
                 busSceneManFirstChoice = true;
+                sec = 1;
+                StartCoroutine(waitFiveSecondsWhenLost());
                 break;
             case "s01d01c04":
                 busSceneManSecondChoice = true;
+                sec = 15;
+                StartCoroutine(waitFiveSecondsWhenLost());
                 break;
             case "s01d01c05":
                 busSceneManThirdChoice = true;
+                sec = 9;
+                StartCoroutine(waitFiveSecondsWhenWon());
                 break;
 
 
@@ -94,5 +113,24 @@ public class GameState : MonoBehaviour {
     {
         SceneManager.LoadScene("square-scene");
     }
+
+    IEnumerator waitFiveSecondsWhenLost()
+    {
+        print(Time.time);
+        yield return new WaitForSeconds(sec);
+        imagebackround.gameObject.SetActive(true);
+        lostTxt.gameObject.SetActive(true);
+        print(Time.time);
+    }
+
+    IEnumerator waitFiveSecondsWhenWon()
+    {
+        print(Time.time);
+        yield return new WaitForSeconds(sec);
+        imagebackround.gameObject.SetActive(true);
+        wonTxt.gameObject.SetActive(true);
+        print(Time.time);
+    }
+
 
 }
