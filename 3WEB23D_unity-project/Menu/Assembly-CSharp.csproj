@@ -52,11 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Menu.cs" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Wouter/Documents/Menu/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Wouter/Documents/Menu/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Wouter/Documents/GitHub/3WEB23D-game/3WEB23D_unity-project/Menu/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/Wouter/Documents/GitHub/3WEB23D-game/3WEB23D_unity-project/Menu/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Unity 2018F/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

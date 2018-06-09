@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 32207661}
   - component: {fileID: 32207660}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: StopSpelKnop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 892614071}
   - component: {fileID: 892614074}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: StartSpelKnop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -590, y: -359}
+  m_AnchoredPosition: {x: -572, y: -359}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892614071
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 1685139241}
   - component: {fileID: 1685139240}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Titel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,8 +835,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035, y: 378}
-  m_SizeDelta: {x: 1262.9, y: 166}
+  m_AnchoredPosition: {x: -0.000018597, y: 408.9}
+  m_SizeDelta: {x: 1276.8, y: 104.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685139240
 MonoBehaviour:
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 1763317945}
   - component: {fileID: 1763317944}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: InstructiesKnop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
