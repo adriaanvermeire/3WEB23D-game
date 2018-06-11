@@ -43,6 +43,10 @@ public class DialogueChoiceBehaviour : PlayableBehaviour
     public override void OnPlayableCreate(Playable playable)
     {
         director = (playable.GetGraph().GetResolver() as PlayableDirector);
+        //if(gameState = null)
+        //{
+        //    gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        //}
     }
 
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
@@ -61,6 +65,7 @@ public class DialogueChoiceBehaviour : PlayableBehaviour
             secondButtonText.text = secondButtonString;
             secondButton.onClick.AddListener(OnSecondButtonClick);
         }
+
         if (director.time >= (clipEndTimeSeconds - 0.02))
         {
             director.time = clipStartTimeSeconds;
@@ -69,7 +74,7 @@ public class DialogueChoiceBehaviour : PlayableBehaviour
 
     public void OnFirstButtonClick()
     {
-        //Debug.Log("first button clicked");
+        Debug.Log("first button clicked");
         firstButton.gameObject.SetActive(false);
         secondButton.gameObject.SetActive(false);
         director.time = firstSkipToSeconds;
@@ -81,7 +86,7 @@ public class DialogueChoiceBehaviour : PlayableBehaviour
 
     public void OnSecondButtonClick()
     {
-        //Debug.Log("second button clicked");
+        Debug.Log("second button clicked");
         firstButton.gameObject.SetActive(false);
         secondButton.gameObject.SetActive(false);
         director.time = secondSkipToSeconds;

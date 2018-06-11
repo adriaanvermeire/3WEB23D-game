@@ -11,7 +11,7 @@ public class GameState : MonoBehaviour {
     //---test states from the gamplay-test-scene---
     private bool choseWOW = false;
     private bool choseLolol = false;
-    private int sec;
+
     //---end of test states---
     private bool busSceneGirlFirstChoice = false;
     private bool busSceneGirlSecondChoice = false;
@@ -19,9 +19,10 @@ public class GameState : MonoBehaviour {
     private bool busSceneManSecondChoice = false;
     private bool busSceneManThirdChoice = false;
 
-    public Image imagebackround;
-    public Text lostTxt;
-    public Text wonTxt;
+    [HideInInspector]
+    public bool helpedGirlInBus = false;
+    [HideInInspector]
+    public bool helpedGirlOnSquare = false;
 
     private bool testChapterPlaying = false;
 
@@ -29,15 +30,17 @@ public class GameState : MonoBehaviour {
     private byte amountOfTimeToDisplayDebug2;
 
     // Use this for initialization
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();
         amountOfTimeToDisplayDebug1 = 0;
         amountOfTimeToDisplayDebug2 = 0;
-        imagebackround.gameObject.SetActive(false);
-        lostTxt.gameObject.SetActive(false);
-        wonTxt.gameObject.SetActive(false);
-        sec = 0;
     }
 
     // Update is called once per frame
@@ -78,31 +81,33 @@ public class GameState : MonoBehaviour {
             //---end of test case's---
             case "s01d01c01":
                 busSceneGirlFirstChoice = true;
-                Debug.Log("Girl first choice");
-                sec = 7;
-                StartCoroutine(waitFiveSecondsWhenLost());
+                //Debug.Log("Girl first choice");
+                helpedGirlInBus = false;
                 break;
             case "s01d01c02":
                 busSceneGirlSecondChoice = true;
-                sec = 5;
-                StartCoroutine(waitFiveSecondsWhenWon());
+                helpedGirlInBus = true;
                 break;
             case "s01d01c03":
                 busSceneManFirstChoice = true;
-                sec = 1;
-                StartCoroutine(waitFiveSecondsWhenLost());
+                helpedGirlInBus = false;
                 break;
             case "s01d01c04":
                 busSceneManSecondChoice = true;
-                sec = 15;
-                StartCoroutine(waitFiveSecondsWhenLost());
+                helpedGirlInBus = false;
                 break;
             case "s01d01c05":
                 busSceneManThirdChoice = true;
-                sec = 9;
-                StartCoroutine(waitFiveSecondsWhenWon());
+                helpedGirlInBus = true;
                 break;
-
+            case "s02d01c01":
+                busSceneManThirdChoice = true;
+                helpedGirlOnSquare = true;
+                break;
+            case "s02d01c02":
+                busSceneManThirdChoice = true;
+                helpedGirlOnSquare = false;
+                break;
 
             default:
                 break;
@@ -113,24 +118,5 @@ public class GameState : MonoBehaviour {
     {
         SceneManager.LoadScene("square-scene");
     }
-
-    IEnumerator waitFiveSecondsWhenLost()
-    {
-        print(Time.time);
-        yield return new WaitForSeconds(sec);
-        imagebackround.gameObject.SetActive(true);
-        lostTxt.gameObject.SetActive(true);
-        print(Time.time);
-    }
-
-    IEnumerator waitFiveSecondsWhenWon()
-    {
-        print(Time.time);
-        yield return new WaitForSeconds(sec);
-        imagebackround.gameObject.SetActive(true);
-        wonTxt.gameObject.SetActive(true);
-        print(Time.time);
-    }
-
 
 }

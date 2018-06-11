@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class StartDialogue : MonoBehaviour {
     public GameObject player;
@@ -10,6 +11,10 @@ public class StartDialogue : MonoBehaviour {
     public GameObject dialogueUI;
     public PlayableDirector playableDirector;
     public Button beginDialogueButton;
+    public Camera playerCamera;
+    public bool loadSceneAfterDialogueEnd = false;
+    [SerializeField]
+    public string sceneName;
 
     private bool isInTrigger = false;
     private bool playableDirectorHasStopped = false;
@@ -23,12 +28,20 @@ public class StartDialogue : MonoBehaviour {
     {
         if (playableDirectorHasStopped)
         {
-            dialogueUI.SetActive(false);
-            player.GetComponent<CameraMovement>().enabled = true;
-            currentWaypoint.SetActive(true);
-            if (isInTrigger)
+            if (loadSceneAfterDialogueEnd)
             {
-                beginDialogueButton.gameObject.SetActive(true);
+                SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            }
+            else
+            {
+                playerCamera.gameObject.SetActive(true);
+                dialogueUI.SetActive(false);
+                player.GetComponent<CameraMovement>().enabled = true;
+                currentWaypoint.SetActive(true);
+                if (isInTrigger)
+                {
+                    beginDialogueButton.gameObject.SetActive(true);
+                }
             }
         }
     }
@@ -36,6 +49,7 @@ public class StartDialogue : MonoBehaviour {
     private void OnTalkButtonClicked()
     {
         dialogueUI.SetActive(true);
+        playerCamera.gameObject.SetActive(false);
         player.GetComponent<CameraMovement>().enabled = false;
         currentWaypoint.SetActive(false);
         playableDirectorHasStopped = false;

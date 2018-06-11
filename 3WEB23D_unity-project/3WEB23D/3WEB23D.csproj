@@ -335,10 +335,13 @@
     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceBehaviour.cs" />
     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceClip.cs" />
     <Compile Include="Assets\DialogueSystem\DialogueChoiceTimlinePlayable\DialogueChoiceTrack.cs" />
+    <Compile Include="Assets\DontDestroyThisOnLoad.cs" />
+    <Compile Include="Assets\EndingText.cs" />
     <Compile Include="Assets\GameState.cs" />
     <Compile Include="Assets\GoToTime\GoToTimeBehaviour.cs" />
     <Compile Include="Assets\GoToTime\GoToTimeClip.cs" />
     <Compile Include="Assets\GoToTime\GoToTimeTrack.cs" />
+    <Compile Include="Assets\NewsTextSelector.cs" />
     <Compile Include="Assets\NPC\scripts\StartDialogue.cs" />
     <Compile Include="Assets\NPC\scripts\testNPC\testNPC.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
@@ -349,6 +352,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Script\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

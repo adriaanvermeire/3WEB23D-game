@@ -510,6 +510,14 @@ ModelImporter:
     2100018: None__bus-door-front
     2100020: None__bus-windows_001
     2100022: Bus_Vloer_1
+    2100024: Mat
+    2100026: Mat.1
+    2100028: Mat.5
+    2100030: Mat.6
+    2100032: Mat.4
+    2100034: Mat.2
+    2100036: Mat.7
+    2100038: Mat.3
     2300000: Bus
     2300002: Cube
     2300004: Cube_1
@@ -1120,6 +1128,51 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Bus_Vloer_1
     second: {fileID: 2100000, guid: b30d6354c7bf93845b12f4b0d9e2762f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 460866081e634b341ae8e4ad135997fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 74703c6742ff54242a27b4bb02f97132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: 1bb869c345dfc0245b9c12229a33f1cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: 706dc603b87221b46a08c8a8b5388cef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.4
+    second: {fileID: 2100000, guid: cb3bc8b0327dd044688dadedb9fc9906, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.5
+    second: {fileID: 2100000, guid: 0dac1b83a29cd8b469f5b3581c1be861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.6
+    second: {fileID: 2100000, guid: afe15ee06ab6eed408523b74836fe797, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.7
+    second: {fileID: 2100000, guid: 326ce183ae21c4f419b4b541d496261f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8cddf788ad71af744977bc125ca9aa5f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -1158,7 +1211,7 @@ ModelImporter:
     importCameras: 0
     importLights: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -1166,13 +1219,13 @@ ModelImporter:
     preserveHierarchy: 0
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 0
