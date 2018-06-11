@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Bus-scene.unity
     guid: 0ce5273ba856cb5428730fb44e77b426
   - enabled: 1
+    path: Assets/Scenes/Newspaper.unity
+    guid: 6e3a46fa7beb1e34098b16143bf57616
+  - enabled: 1
     path: Assets/Scenes/square-scene.unity
     guid: 67d71f768824e1348957aa292294f5b5
   - enabled: 1

@@ -341,9 +341,11 @@
     <Compile Include="Assets\GoToTime\GoToTimeBehaviour.cs" />
     <Compile Include="Assets\GoToTime\GoToTimeClip.cs" />
     <Compile Include="Assets\GoToTime\GoToTimeTrack.cs" />
+    <Compile Include="Assets\LoadSquareScene.cs" />
     <Compile Include="Assets\NewsTextSelector.cs" />
     <Compile Include="Assets\NPC\scripts\StartDialogue.cs" />
     <Compile Include="Assets\NPC\scripts\testNPC\testNPC.cs" />
+    <Compile Include="Assets\play.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />

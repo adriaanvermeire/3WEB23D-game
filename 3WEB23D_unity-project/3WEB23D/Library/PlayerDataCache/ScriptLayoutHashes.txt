@@ -2,9 +2,15 @@ WebGL
 PlayerPath?
 D:/Jeroen/Documents/GitHub/3WEB23D-game/3WEB23D_unity-project/3WEB23D/Build
 SceneListBegin?
+Assets/Scenes-menu/mainMenu.unity
+Assets/Scenes-menu/instructions.unity
 Assets/Scenes/Bus-scene.unity
+Assets/Scenes/Newspaper.unity
+Assets/Scenes/square-scene.unity
+Assets/Scenes/Ending.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelReset
+07d9908b9be7492475654bd7fde868c5 Assembly-CSharp.dll:.EndingText
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneAndURLLoader
 30afa8783a8bbee2e465ec9ce1efaee2 Assembly-CSharp.dll:.TimeDilationTrack
 7ba1e84ad3d2d8813486668e75f842ce Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.ExtinguishableParticleSystem
@@ -114,6 +120,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+07d9908b9be7492475654bd7fde868c5 Assembly-CSharp.dll:.NewsTextSelector
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -227,11 +234,12 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 d2af69ce28cda6fcf0b7728ae3f251b4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.DynamicShadowSettings
-1917d6920433cbceb5999ac21cf41988 Assembly-CSharp.dll:.StartDialogue
+81dc721fe76de5591073d69b89f00017 Assembly-CSharp.dll:.StartDialogue
 9383e0779cdaca0acd101f7f188e02bc Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.JetParticleEffect
 469906d0c8f64c72ec7830718057059f Assembly-CSharp.dll:.MenuSceneLoader
 602017ac837ce39de79e6b98478ee720 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleActivatorMenu
 71ed44096f44bf505e8f927b5d9a655a Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.Mudguard
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroyThisOnLoad
 3073f6d8af9d737e4e72afa03e0ce866 Assembly-CSharp.dll:UnityStandardAssets.SceneUtils.PlaceTargetWithMouse
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -251,12 +259,15 @@ a8796ecdc9d5c260bbe32f30c4b10708 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 b7f557c19cce3b6f593e26edfe1ec859 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.Ball
 0ad469aca31264c6140b1e503c43ab6b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.GerstnerDisplace
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Menu
 f4b175ffc1eeca85d2783436b4c764a7 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.Explosive
 6746ad828d32ad6e5c07a63950fd4be6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterTile
 ca0102e7b75abcf9b630dee6745f7eb3 Assembly-CSharp.dll:.CameraMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 0cc5f4f1fcfde0ea893fbb248aa067a1 Assembly-CSharp.dll:.DialogueChoiceClip
-ad07188c30bb641a7830a50006749416 Assembly-CSharp.dll:.GameState
+4175cd655c913bf844cf58d05a133356 Assembly-CSharp.dll:.GameState
 680518b067ccfce3ceb4b103ee6d1e57 Assembly-CSharp.dll:.TransformTweenClip
 a412f64ff4e4667098f82b7fa0bf56e2 Assembly-CSharp-firstpass.dll:UnityStandardAssets._2D.PlatformerCharacter2D
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.play
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadSquareScene

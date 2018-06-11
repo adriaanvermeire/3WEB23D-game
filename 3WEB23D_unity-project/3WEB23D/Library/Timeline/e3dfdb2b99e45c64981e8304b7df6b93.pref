@@ -19,7 +19,7 @@ MonoBehaviour:
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
   windowTime: 0
-  verticalScroll: 337
+  verticalScroll: 225.44672
   m_Keys:
   - {fileID: 114378741247729418, guid: e3dfdb2b99e45c64981e8304b7df6b93, type: 2}
   - {fileID: 114205519654676918, guid: e3dfdb2b99e45c64981e8304b7df6b93, type: 2}

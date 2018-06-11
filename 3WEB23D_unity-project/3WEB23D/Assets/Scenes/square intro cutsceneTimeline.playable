@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: b3b309522f367704eac58f15cbbc4df8, type: 3}
+  m_Clip: {fileID: 8300000, guid: 7452269d594c9e64985d118072a28692, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
 --- !u!114 &114124984571463684
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   template:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 24
-    text: 'Man: hmm wat een lekker wijf!'
+    text: 'Man: Hmm wat een lekker wijf!'
 --- !u!114 &114689545173182058
 MonoBehaviour:
   m_ObjectHideFlags: 1
