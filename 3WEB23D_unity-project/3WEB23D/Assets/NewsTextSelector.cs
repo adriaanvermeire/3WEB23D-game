@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class NewsTextSelector : MonoBehaviour {
 
     GameState gameState;
-    public Text lostText;
-    public Text wonText;
+    public Image lostImage;
+    public Image wonImage;
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +18,11 @@ public class NewsTextSelector : MonoBehaviour {
 	void Update () {
         if (gameState.helpedGirlInBus)
         {
-            wonText.gameObject.SetActive(true);
+            wonImage.gameObject.SetActive(true);
         }
         else
         {
-            lostText.gameObject.SetActive(true);
+            lostImage.gameObject.SetActive(true);
         }
 	}
 }

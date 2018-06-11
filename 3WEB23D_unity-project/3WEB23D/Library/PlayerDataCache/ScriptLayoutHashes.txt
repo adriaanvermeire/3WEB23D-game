@@ -70,6 +70,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadSquareScene
 8e9f5b922979e9356a11d2ee2b32ee60 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
 aa13baec1c19c8fa869cb21cb01a3767 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBase
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -120,7 +121,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-07d9908b9be7492475654bd7fde868c5 Assembly-CSharp.dll:.NewsTextSelector
+ad7258fab53abf86767eefbb7ac8988f Assembly-CSharp.dll:.NewsTextSelector
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -159,6 +160,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 69f05d94227d8676c14071b3dbe1b417 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.AeroplaneController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.DragRigidbody
 78ebae5ed9b3edeb216da437b99754a4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.Joystick
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.play
 149e538468c9a609cf26b23682c996c7 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.PlatformSpecificContent
 37bf4d6a6d424731cb4a9b998783e5c6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
 9927f9033995c048dcee5258ceb7659a Assembly-CSharp.dll:.CameraSwitch
@@ -269,5 +271,3 @@ ca0102e7b75abcf9b630dee6745f7eb3 Assembly-CSharp.dll:.CameraMovement
 680518b067ccfce3ceb4b103ee6d1e57 Assembly-CSharp.dll:.TransformTweenClip
 a412f64ff4e4667098f82b7fa0bf56e2 Assembly-CSharp-firstpass.dll:UnityStandardAssets._2D.PlatformerCharacter2D
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.play
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadSquareScene

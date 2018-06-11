@@ -4077,8 +4077,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_Font: {fileID: 12800000, guid: 38aa7156602f632469773a43ccad9e78, type: 3}
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -4089,7 +4089,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vraag man om haar met rust te laten (boos)
+  m_Text: Doe alsof je meisje kent.
 --- !u!222 &764409627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4613,48 +4613,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 851824943}
---- !u!1 &859163987
+--- !u!1 &859163987 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 859163989}
-  - component: {fileID: 859163988}
-  m_Layer: 0
-  m_Name: GameState
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &859163988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 859163987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02406deb13f1c64ab2ded94c71e29be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  helpedGirlInBus: 0
-  helpedGirlOnSquare: 0
---- !u!4 &859163989
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 859163987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1064.628, y: 474.838, z: 69.35938}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_PrefabParentObject: {fileID: 1546487760772296, guid: d7eb69adc2d551f4593360f9ffb18f03,
+    type: 2}
+  m_PrefabInternal: {fileID: 1149232102}
 --- !u!1 &866477089
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,6 +6616,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1108518582}
+--- !u!1001 &1149232102
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1064.628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 474.838
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 69.35938
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221146355056296, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d7eb69adc2d551f4593360f9ffb18f03, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1150973677
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,8 +10644,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_Font: {fileID: 12800000, guid: 38aa7156602f632469773a43ccad9e78, type: 3}
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -10651,7 +10656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vraag man om haar met rust te laten (vriendelijk)
+  m_Text: Valt hij u lastig mevrouw?
 --- !u!222 &1856229526
 CanvasRenderer:
   m_ObjectHideFlags: 0
