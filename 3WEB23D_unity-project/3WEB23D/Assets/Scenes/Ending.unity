@@ -276,7 +276,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Goed zo! Je bent opgekomen voor het meisje en hebt voorkomen dat de man
-    verder ging dan alleen maar foto\u2019s nemen"
+    verder ging dan alleen maar foto\u2019s nemen."
 --- !u!222 &194539569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oeps! je hebt niet kunnen voorkomen dat het meisje aangerand werdt.
+  m_Text: Oeps! je hebt niet kunnen voorkomen dat het meisje aangerand werd.
 --- !u!222 &589883342
 CanvasRenderer:
   m_ObjectHideFlags: 0
